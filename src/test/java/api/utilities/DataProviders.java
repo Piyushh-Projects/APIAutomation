@@ -9,7 +9,7 @@ public class DataProviders {
     @DataProvider(name = "Data")
     public String [][]getAddData() throws IOException {
 
-        String path = System.getProperty("user.dir")+"//testData//Userdata.xlsx";
+        String path = System.getProperty("user.dir") + "//testData//Userdata.xlsx";
         excelUtility excel = new excelUtility(path);
 
         int rowNum = excel.getRowCount("Sheet1");

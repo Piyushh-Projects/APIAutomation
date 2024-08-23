@@ -1,0 +1,9 @@
+{
+  "name": "Apple MacBook Air 14",
+  "data": {
+    "year": 2019,
+    "price": 999,
+    "CPU model": "M3",
+    "Hard disk size": "256 GB"
+  }
+}

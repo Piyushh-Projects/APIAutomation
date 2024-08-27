@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Chaining Test Suite with Individual Tests">
+    <test verbose="2" preserve-order="true"
+          name="Create User">
+        <classes>
+            <class name="api.chaining.CreateUser">
+                <methods>
+                    <include name="test_createUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="Get User">
+        <classes>
+            <class name="api.chaining.GetUser">
+                <methods>
+                    <include name="test_getUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="Update User">
+        <classes>
+            <class name="api.chaining.UpdateUser">
+                <methods>
+                    <include name="test_updateUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="Delete User">
+        <classes>
+            <class name="api.chaining.DeleteUser">
+                <methods>
+                    <include name="test_deleteUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

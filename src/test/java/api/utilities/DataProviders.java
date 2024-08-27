@@ -10,7 +10,7 @@ public class DataProviders {
     public String [][]getAddData() throws IOException {
 
         String path = System.getProperty("user.dir") + "//testData//Userdata.xlsx";
-        excelUtility excel = new excelUtility(path);
+        ExcelUtility excel = new ExcelUtility(path);
 
         int rowNum = excel.getRowCount("Sheet1");
         int colCount = excel.getCellCount("Sheet1",1);
@@ -28,7 +28,7 @@ public class DataProviders {
     public String [] getUserNames() throws IOException {
 
         String path = System.getProperty("user.dir")+"//Userdata.xlsx";
-        excelUtility excel = new excelUtility(path);
+        ExcelUtility excel = new ExcelUtility(path);
 
         int rowNum = excel.getRowCount("Sheet1");
         String[] apiData = new String[rowNum];

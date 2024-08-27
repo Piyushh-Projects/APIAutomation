@@ -14,7 +14,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class excelUtility {
+public class ExcelUtility {
 
     public FileInputStream fi;
     public FileOutputStream fo;
@@ -25,7 +25,7 @@ public class excelUtility {
     public CellStyle style;
     String path;
 
-    public excelUtility(String path) {
+    public ExcelUtility(String path) {
         this.path = path;
     }
 
